@@ -1,7 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+/**
+ *
+ * @author Md. Emran Hossain
+ * @email: emranhos1@gmail.com
  */
 package dbConnection;
 
@@ -9,10 +9,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
-/**
- *
- * @author PLAYBOY
- */
 public class conRs {
 
     private Connection con;

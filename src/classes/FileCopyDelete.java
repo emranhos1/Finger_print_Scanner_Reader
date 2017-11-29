@@ -13,10 +13,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-
 /**
  *
- * @author PLAYBOY
+ * @author Md. Emran Hossain
+ * @email: emranhos1@gmail.com
  */
 public class FileCopyDelete {
 
