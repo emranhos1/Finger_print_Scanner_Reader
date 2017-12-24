@@ -7,6 +7,7 @@ package classes.findFile;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class CheckFileAndRead {
@@ -26,14 +27,18 @@ public class CheckFileAndRead {
     private static long lastMod;
     private static File choice;
     private static String fileName;
+    private static AllPath rxfp;
+    private static String uploadFilePath;
 
 //    public static void main(String[] args) {
 //        lastFileModified();
 //    }
     
-    public static boolean isEmpty() {
+    public static boolean isEmpty() throws IOException {
 
-        File file = new File("E:\\Programming\\1. Office project\\Project\\Desktop base\\uploaded file");
+        rxfp = ReadXMLForPath.ReadXMLForPath();
+        uploadFilePath = rxfp.getUploadFilePath();
+        File file = new File(uploadFilePath);
         if (file.isDirectory()) {
             if (file.list().length > 0) {
                 System.out.println("There is files");
@@ -49,7 +54,7 @@ public class CheckFileAndRead {
     }
 
     public static String lastFileModified() {
-        dir = new File("E:\\Programming\\1. Office project\\Project\\Desktop base\\uploaded file");
+        dir = new File(uploadFilePath);
         files = dir.listFiles(new FileFilter() {
             public boolean accept(File file) {
                 return file.isFile();
@@ -70,7 +75,7 @@ public class CheckFileAndRead {
     public static void openFile(String fileName) {
 
         try {
-            scanner = new Scanner(new File("E:\\Programming\\1. Office project\\Project\\Desktop base\\uploaded file\\" + fileName));
+            scanner = new Scanner(new File(uploadFilePath + "\\" + fileName));
         } catch (Exception e) {
             System.out.println("Could not find file");
             e.printStackTrace();

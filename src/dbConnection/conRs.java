@@ -44,5 +44,4 @@ public class conRs {
         this.rs = rs;
         this.pstm = pstm;
     }
-    
 }

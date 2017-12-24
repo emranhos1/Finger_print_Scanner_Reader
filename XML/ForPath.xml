@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<path id = "1">
+    <logFilePath>E:\\Programming\\1. Office project\\Project\\Desktop base\\log\\MyLogFile.log</logFilePath>
+    <allDataPath>E:\\Programming\\1. Office project\\Project\\Desktop base\\allData\\</allDataPath>
+    <databaseLocation>E:\\Programming\\1. Office project\\Project\\Desktop base\\att2000.mdb</databaseLocation>
+    <uploadFilePath>E:\\Programming\\1. Office project\\Project\\Desktop base\\uploaded file</uploadFilePath>
+    <xmlFilePath>E:\\Programming\\1. Office project\\Project\\Desktop base\\FingerprintScannerReader\\XML\\ForPutty.xml</xmlFilePath>
+    <puttyDir>E:\\Programming\\1. Office project\\Project\\Desktop base\\software\\Putty\\PuTTYPortable\\App\\putty</puttyDir>
+</path>
